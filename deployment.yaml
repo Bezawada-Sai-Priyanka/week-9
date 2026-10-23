@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: registration-form-deployment
+  name: registration-form-deployment
 spec:
-replicas: 4
-selector:
-matchLabels:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: registration-form
+  template:
+    metadata:
+      labels:
 app: registration-form
-template:
-metadata:
-labels:
-app: registration-form
-spec:
-containers:
-- name: registration-form
-image: preezypanda0711/registration-form:latest
-ports:
+  spec:
+    containers:
+    - name: registration-form
+      image: preezypanda0711/registration-form:latest
+      ports:
+      - containerPort: 5000
 - containerPort: 5000
