@@ -10,11 +10,10 @@ spec:
   template:
     metadata:
       labels:
-app: registration-form
-  spec:
-    containers:
-    - name: registration-form
-      image: preezypanda0711/registration-form:latest
-      ports:
-      - containerPort: 5000
-- containerPort: 5000
+        app: registration-form
+    spec:
+      containers:
+        - name: registration-form
+          image: preezypanda6711/registration-form:latest
+          ports:
+            - containerPort: 5000
