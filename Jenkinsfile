@@ -1,9 +1,9 @@
 pipeline {
 agent any
 environment {
-DOCKER_USERNAME = "Preezypanda0711"
+DOCKER_USERNAME = "preezypanda0711"
 DOCKER_PASSWORD = "Asdfghjkl"
-IMAGE_NAME = "sumayyasadaf/registration-form"
+IMAGE_NAME = "preezypanda0711/registration-form"
 IMAGE_TAG = "latest"
 }
 stages {
